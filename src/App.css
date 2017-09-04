@@ -1,21 +1,38 @@
 
-.App-nav {
-  background-color: #801c23;
-  height: 70px;
-  padding: 20px;
-  color: white;
-  text-align: center;
-  font-family: 'Encode Sans', sans-serif;
+h1 {
+  color: black;
 }
 
-.App-content {
-  text-align: center;
-}
-
-.Cooking-logo {
+/*.Cooking-logo {
   position: relative;
-  top: -137px;
+  top: -186px;
   height: 180px;
+}*/
+
+.active {
+  font-weight: bold;
 }
 
+li {
+  list-style-type: none;
+}
+
+a {
+  font-family: 'Encode Sans', sans-serif;
+  text-decoration: none;
+  color: black !important; 
+}
+
+.home-container, .signup-container, .getintouch-container, .gettoknowus-container {
+  padding: 40px;
+}
+
+.nav-wrapper {
+  background-color: #ff7043;
+  height: 80px !important;
+}
+
+.btn {
+  background-color: #ffab91 !important;
+}
 

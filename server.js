@@ -2,10 +2,15 @@ var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
+var bodyParser = require('body-parser');
+
+require('dotenv').config();
+require('./config/database');
 
 var app = express();
 
 app.use(logger('dev'));
+app.use(bodyParser.json())
 
 // Configure both serve-favicon & static middlewares
 // to serve from the production 'build' folder
@@ -13,6 +18,7 @@ app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Put API routes here, before the "catch all" route
+app.use('/api/users', require('./routes/api/users'));
 
 
 // The following "catch all" route is necessary for
