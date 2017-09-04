@@ -5,18 +5,17 @@ function Nav() {
   return (
 
   <nav>
-    <div className="nav-wrapper">
-      <div>Logo</div>
-      <ul id="nav-mobile" className="right hide-on-med-and-down">
-        <li>
-          
-          <NavLink exact activeClassName='active' to='/'>Home</NavLink> 
-          <NavLink activeClassName='active' to='/gettoknowus'>Get To Know Us</NavLink>
-          <NavLink activeClassName='active' to='/getintouch'>Get In Touch</NavLink>
-          <NavLink activeClassName='active' to='/signup'>Sign Up</NavLink>
+    <div className='nav-wrapper'>
+      <img className='logo' src='./images/getcooking_whitelogo-01.png' />
+    
+        <ul className='right hide-on-med-and-down'>
 
-        </li>
-      </ul>
+          <li><NavLink className='nav' exact activeClassName='active' to='/'>Home</NavLink></li>
+          <li><NavLink className='nav' exact activeClassName='active' to='/gettoknowus'>Get To Know Us</NavLink></li>
+          <li><NavLink className='nav' exact activeClassName='active' to='/getintouch'>Get In Touch</NavLink></li>
+          <li><NavLink className='nav' exact activeClassName='active' to='/signup'>Sign Up</NavLink></li>
+        </ul>
+      
     </div>
   </nav>
 

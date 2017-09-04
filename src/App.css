@@ -3,36 +3,45 @@ h1 {
   color: black;
 }
 
-/*.Cooking-logo {
+.logo {
   position: relative;
-  top: -186px;
-  height: 180px;
-}*/
+  top: -27px;
+  right: 10px;
+  height: 190px;
+}
 
 .active {
   font-weight: bold;
+  color: #bdbdbd ;
+  font-size: 25px !important;
 }
 
-li {
-  list-style-type: none;
+.nav {
+  font-size: 20px;
+}
+
+ul, li {
+  padding-top: 20px;
+  padding-right: 50px;
 }
 
 a {
   font-family: 'Encode Sans', sans-serif;
   text-decoration: none;
-  color: black !important; 
-}
+  color: white; 
+  }
 
 .home-container, .signup-container, .getintouch-container, .gettoknowus-container {
-  padding: 40px;
+  padding: 80px;
 }
 
 .nav-wrapper {
   background-color: #ff7043;
-  height: 80px !important;
+  height: 120px !important;
 }
 
 .btn {
-  background-color: #ffab91 !important;
+  background-color: #e64a19 !important;
 }
+
 

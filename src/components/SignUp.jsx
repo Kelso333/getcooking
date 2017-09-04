@@ -34,7 +34,7 @@ class SignUp extends Component {
             <input ref={(el) => this.password=el} type='password' placeholder='password' value={this.state.password} onChange={this.handleInput} />
             <br />
             <br />
-            <button className='btn waves-effect' type='submit'>Submit</button>
+            <button className='btn waves-effect hoverable' type='submit'>Submit</button>
           </form>
 
       </div>
