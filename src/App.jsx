@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
 import './App.css';
+import React, { Component } from 'react';
 import Home from './components/Home';
 import Nav from './components/Nav';
 import GetToKnowUs from './components/GetToKnowUs';
 import GetInTouch from './components/GetInTouch';
 import SignUp from './components/SignUp';
+import LogIn from './components/LogIn';
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,9 +25,10 @@ class App extends Component {
   }
   
 
-   /*---------- Callback Methods ----------*/
+  /*---------- Callback Methods ----------*/
 
-  handleSignUp(data) {
+
+   handleSignUp(data) {
     console.log(data)
     fetch('http://localhost:3000/api/users/signup', {
       method: 'POST',
@@ -73,29 +75,29 @@ class App extends Component {
     return (
 
        <div>
-
           <Router>
-            
             <div>
               <Nav />
-              
-              <Route exact path='/' component={Home} />
-              <Route exact path='/gettoknowus' component={GetToKnowUs} />
-              <Route exact path='/getintouch' component={GetInTouch} />
-              <Route exact path='/signup' component={SignUp} />
+              <Switch>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/gettoknowus' component={GetToKnowUs} />
+                <Route exact path='/getintouch' component={GetInTouch} />
+                <Route exact path='/signup' render={(props) =>
+                  this.state.user
+                  ?
+                  <p>hello {this.state.user.name}</p>
+                  :
+                  <SignUp
+                  action={this.handleSignUp}
+                  />
+                }/>
+
+                <Route exact path='/login' component={LogIn} />
+              </Switch>
+
             </div>
           </Router>
-        
-    
-      {/*{
-        this.state.user
-        ?
-        <p>hello {this.state.user.email}</p>
-        :
-        <SignUp action={this.handleSignUp}/>     
-      }*/}
 
-        
       </div>
     );
   }

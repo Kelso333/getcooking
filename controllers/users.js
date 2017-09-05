@@ -1,4 +1,5 @@
 var User = require('../models/user');
+var User = require('../models/user');
 var jwt = require('jsonwebtoken');
 var SECRET = process.env.SECRET;
 
@@ -15,8 +16,10 @@ module.exports = {
     )
     user.save()
       .then(user => {
+      // TODO: Send back a JWT instead of the user
         res.json(user)
       })
+      // User data invalid (prob duplicate email)
       .catch(err => res.status(400).json(err));
   },
 

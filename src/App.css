@@ -5,43 +5,44 @@ h1 {
 
 .logo {
   position: relative;
-  top: -27px;
-  right: 10px;
-  height: 190px;
+  top: -19px;
+  right: 3px;
+  height: 150px;
 }
 
 .active {
   font-weight: bold;
   color: #bdbdbd ;
-  font-size: 25px !important;
+  font-size: 21px !important;
 }
 
-.nav {
-  font-size: 20px;
-}
-
-ul, li {
-  padding-top: 20px;
-  padding-right: 50px;
+.navlinks {
+  margin-right: 10px;
+  padding-top: 15px;
+  padding-right: 20px;
+  color: white; 
 }
 
 a {
   font-family: 'Encode Sans', sans-serif;
   text-decoration: none;
-  color: white; 
   }
 
-.home-container, .signup-container, .getintouch-container, .gettoknowus-container {
+.home-container, .login-container, .signup-container, .getintouch-container, .gettoknowus-container {
   padding: 80px;
 }
 
 .nav-wrapper {
   background-color: #ff7043;
-  height: 120px !important;
+  height: 100px !important;
 }
 
 .btn {
   background-color: #e64a19 !important;
+}
+
+.caption {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 
