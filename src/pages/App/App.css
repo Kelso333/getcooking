@@ -17,24 +17,22 @@ h1 {
 
 
 .logo {
-  position: relative;
+  position: absolute;
   top: -19px;
-  left: -740px;
+  left: -5px;
   height: 150px;
 }
 
 .navlinks {
   position: relative;
   top: 13px;
-  left: 88px;
+  left: -5px;
   color: white;
 }
 
 .userdropdown {
   font-family: 'Encode Sans', sans-serif;
-  position: relative;
-  top: 103px;
-  right: 70px;
+ 
 }
 
 a {
@@ -68,4 +66,7 @@ a {
   left: 165px;
   }
 
+span {
+  color: black;
+}
 

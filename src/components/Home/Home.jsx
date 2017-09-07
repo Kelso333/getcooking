@@ -13,7 +13,9 @@ class Home extends Component {
     return(
 
       <div className='home'>
-        <Slider>
+
+        
+        <Slider indicators={false}>
           <Slide
             src='./images/crab-ceviche.jpg' 
             title='Crab Ceviche'>

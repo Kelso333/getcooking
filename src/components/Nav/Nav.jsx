@@ -5,44 +5,33 @@ const Nav = (props) => {
   return (
     props.user ?
 
+  
+  
+
       <Navbar className='navbar' right>
-
-        <NavItem href='/'><img className='logo' src='./images/getcooking_whitelogo-01.png' /></NavItem>
-        <NavItem className='navlinks' activeClassName='active' href='/'>Home</NavItem>
-        <NavItem className='navlinks' activeClassName='active' href='/gettoknowus'>Get To Know Us</NavItem>
-        <NavItem className='navlinks' activeClassName='active' href='/getintouch'>Get In Touch</NavItem>
-
+    <img className='logo' src='./images/getcooking_whitelogo-01.png' />
+        
+        <NavItem className='navlinks' href='/'>Home</NavItem>
+        <NavItem className='navlinks' href='/recipes'>Recipes</NavItem>
+        <NavItem className='navlinks' 
+        href='/gettoknowus'>Get To Know Us</NavItem>
+        <NavItem className='navlinks' href='/getintouch'>Get In Touch</NavItem>
+        <NavItem className='navlinks' href='/getintouch'>Get In Touch</NavItem>
+        <NavItem href='' onClick={props.handleLogOut}>Log Out</NavItem>
       
-        <Dropdown className='userdropdown' trigger={
-          <Button className='userdropdown btn waves-effect hoverable'><span> Hello, {props.user.name}</span></Button>
-          }>
-
-          <NavItem href='/'>Edit Profile</NavItem>
-          <NavItem divider />
-          <NavItem><a onClick={props.handleLogOut}>Log Out</a></NavItem>
-        </Dropdown>
-      
-
+         <NavItem className='navlinks'><span> Hello, {props.user.name}</span></NavItem>
       </Navbar>
       :
+
       <Navbar className='navbar' right>
 
         <NavItem href='/'><img className='logo' src='./images/getcooking_whitelogo-01.png' /></NavItem>
         <NavItem className='navlinks' href='/'>Home</NavItem>
         <NavItem className='navlinks' href='/gettoknowus'>Get To Know Us</NavItem>
         <NavItem className='navlinks' href='/getintouch'>Get In Touch</NavItem>
-       
-
-
-       <Dropdown className='userdropdown' trigger={
-        <Button className='userdropdown btn waves-effect hoverable'>Sign Up!</Button>
-        }>
-        <NavItem href='/signup'>Sign Up</NavItem>
-        <NavItem divider />
-        <NavItem href='/login'>Log In</NavItem>
-      </Dropdown>
-
-      </Navbar>
+       <NavItem className='navlinks' href='/signup'>Sign Up</NavItem>
+        <NavItem className='navlinks' href='/login'>Log In</NavItem>
+    </Navbar>
     );
 }
 

@@ -7,6 +7,7 @@ import GetInTouch from '../../components/GetInTouch/GetInTouch';
 import SignUpPage from '../SignUpPage/SignUpPage';
 import LogInPage from '../LogInPage/LogInPage'
 import userService from '../../utils/userService';
+import RecipesPage from '../RecipesPage/RecipesPage';
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,6 +22,7 @@ class App extends Component {
     super(props);
     this.state = {
       user: null,
+      recipe: null
     }
   }
   
@@ -39,6 +41,15 @@ class App extends Component {
   handleLogIn = () => {
     this.setState({user: userService.getUser()});
   }
+
+  handleRecipe = () => {
+    fetch('/api/recipes', {
+      method: 'GET',
+      headers: {'Content-Type': 'application/json'}
+    })
+    .then(res => res.json())
+    .then(data => this.setState({recipe: data})); 
+  }
   
    /*---------- Helper Methods (GET) ----------*/
   
@@ -49,10 +60,13 @@ class App extends Component {
    componentDidMount() {
      let user = userService.getUser();
      this.setState({user});
+
+     this.handleRecipe();
    }
   
   
   render() {
+    console.log(this.state.recipe);
     return (
 
        <div>
@@ -66,10 +80,19 @@ class App extends Component {
               <Switch>
                 <Route exact path='/' render={(props) =>
                   <Home
-                    user={this.props.user}
+                    user={this.state.user}
                     handleLogOut={this.handleLogOut}
-                    />
-                  }/>
+                  />
+                }/>
+                <Route exact path='/recipes' render={() => (
+                  userService.getUser() ?
+                  <RecipesPage 
+                    user={this.state.user}
+                    recipe={this.state.recipe}
+                  />
+                  :
+                  <Redirect to='/login' />
+                )} />
                 <Route exact path='/gettoknowus' component={GetToKnowUs} />
                 <Route exact path='/getintouch' component={GetInTouch} />
                 <Route exact path='/signup' render={(props) =>

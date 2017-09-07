@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {Collapsible, CollapsibleItem, Slider, Slide, Carousel} from 'react-materialize';
+import {Collapsible, Icon, CollapsibleItem, Slider, Slide, Carousel} from 'react-materialize';
 
 class GetInTouch extends Component {
   render() {
@@ -12,7 +12,7 @@ class GetInTouch extends Component {
         <br />
 
            <div>
-        <Slider>
+        <Slider indicators={false}>
           <Slide
             src='./images/recipe_image.jpg'>
         </Slide>

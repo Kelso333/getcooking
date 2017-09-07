@@ -15,7 +15,7 @@ class GetToKnowUS extends Component {
         <span style={{'font-weight':'bolder', 'font-size':'20', 'color': 'orange'}}>GET COOKING!</span> </p>
 
       <div>
-        <Slider>
+        <Slider indicators={false}>
           <Slide
             src='./images/potato_.jpg'>
         </Slide>
