@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Recipe from '../../components/Recipe/Recipe';
 
 const RecipesPage = (props) => { 
 
@@ -9,26 +10,16 @@ const RecipesPage = (props) => {
           <h1>Recipes</h1>
 
           <ul>
-            {props.recipe.matches.map(food => {
-              return(
-
-              <div>  
-              <li key={food.id}>
-                {food.recipeName}
-              </li>
-              <li key={food.id}>
-                {food.ingredients}
-              </li>
-              </div>
-              )
-            })}
+            {props.recipe.matches.map(r => 
+              <Recipe recipe={r} key={r.id} />
+            )}
           </ul>    
-          
+        
           <a href='/'>Go Home</a>
         </div>
       :
       <div>
-        <h1> Where it at </h1>
+        <h4> Give me a second... </h4>
       </div>
     );
   
