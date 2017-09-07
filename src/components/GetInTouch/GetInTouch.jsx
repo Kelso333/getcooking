@@ -6,14 +6,18 @@ class GetInTouch extends Component {
   render() {
     return (
 
-      <div className='getintouch-container'>
+      <div className='getintouch'>
         <h3>Get In Touch</h3>
 
         <br />
 
-        <Carousel options={{ fullWidth: true }} images={[
-          './images/recipe_image.jpg',
-      ]} />
+           <div>
+        <Slider>
+          <Slide
+            src='./images/recipe_image.jpg'>
+        </Slide>
+        </Slider>
+      </div>
 
     
       <br />

@@ -41,8 +41,10 @@ class SignUpForm extends Component {
   render() {
     return (
 
-      <div className='signup-container'>
+      <div className='signup'>
         <h1>Sign Up</h1>
+        <br />
+        <br />
 
           <form className="form-horizontal" onSubmit={this.handleSubmit} >
 
