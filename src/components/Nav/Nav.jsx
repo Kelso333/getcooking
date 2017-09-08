@@ -25,7 +25,7 @@ const Nav = (props) => {
           <NavLink exact to='/getintouch' activeClassName='active'>Get In Touch</NavLink></NavItem>
           
          <Dropdown trigger={
-          <Button className='usernav' ><span> Hello, {props.user.name}</span></Button>
+          <Button className='usernav btn waves-effect hoverable' ><span> Hello, {props.user.name}</span></Button>
           }>
           <NavItem className='dropdown'>
             <NavLink exact to='/' activeClassName='active'>Edit Profile</NavLink></NavItem>
@@ -48,7 +48,7 @@ const Nav = (props) => {
           <NavLink exact to='/getintouch' activeClassName='active'>Get In Touch</NavLink></NavItem>
 
         <Dropdown trigger={
-          <Button className='usernav'><span>Sign Up</span></Button>
+          <Button className='usernav btn waves-effect hoverable'><span>Sign Up</span></Button>
           }>
           <NavItem className='dropdown'>
             <NavLink exact to='/signup'>Sign Up</NavLink></NavItem>

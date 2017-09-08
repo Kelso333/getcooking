@@ -10,7 +10,6 @@ class GetInTouch extends Component {
         <h3>Get In Touch</h3>
 
         <br />
-
            <div>
         <Slider indicators={false}>
           <Slide
@@ -19,7 +18,6 @@ class GetInTouch extends Component {
         </Slider>
       </div>
 
-    
       <br />
         <Collapsible popout defaultActiveKey={3}>
           <CollapsibleItem header='Address'>
