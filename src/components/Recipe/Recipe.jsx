@@ -1,13 +1,26 @@
 import React from 'react';
+import {Row, Col} from 'react-materialize';
 
 const Recipe = (props) => {
   return (
-    <li>
-      <p>{props.recipe.recipeName}</p>
-      <p>{props.recipe.ingredients}</p>
-      <p>{props.recipe.recipeName}</p>
-      <img src={props.recipe.imageUrlsBySize["90"]} />
-    </li>
+
+    <div className='RecipesPage'>
+
+      <Row className='recipes'>
+        <Col s={5} className='apiphoto'>
+        <img src={props.recipe.imageUrlsBySize["90"]} />
+        </Col>
+        
+        <Col s={5} className='apirepname'>
+            <p>{props.recipe.recipeName}</p>
+        </Col>
+
+        <Col s={5} className='apiingred'>
+        <p>{props.recipe.ingredients}</p>
+        </Col>
+      </Row>
+
+    </div>
   );
 }
 

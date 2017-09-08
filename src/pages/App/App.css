@@ -9,7 +9,7 @@ h1 {
   top: 180px;
 }
 
-.gettoknowus, .getintouch, .signup, .login {
+.gettoknowus, .getintouch, .signup, .login, .loading, .RecipesPage {
   text-align: center;
   padding: 60px;
   font-family: 'Encode Sans', sans-serif;
@@ -61,7 +61,10 @@ a {
   left: 165px;
   }
 
-span {
-  color: black;
-}
+  .apiphoto {
+
+  }
+
+  
+
 

@@ -6,7 +6,8 @@ const Nav = (props) => {
     props.user ?
 
       <Navbar className='navbar' right>
-    <img className='logo' src='./images/getcooking_whitelogo-01.png' />
+        
+        <img className='logo' src='./images/getcooking_whitelogo-01.png' />
         
         <NavItem className='navlinks' href='/'>Home</NavItem>
         <NavItem className='navlinks' href='/recipes'>Recipes</NavItem>
@@ -19,7 +20,7 @@ const Nav = (props) => {
           }>
           <NavItem className='userdropdown'>Edit Profile</NavItem>
           <NavItem divider />
-          <NavItem className='nuserdropdown' href='' onClick={props.handleLogOut}>Log Out</NavItem>
+          <NavItem className='userdropdown' href='' onClick={props.handleLogOut}>Log Out</NavItem>
          </Dropdown>
 
       </Navbar>
