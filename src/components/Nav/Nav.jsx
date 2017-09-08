@@ -23,7 +23,7 @@ const Nav = (props) => {
 
         <NavItem className='navlinks'> 
           <NavLink exact to='/getintouch' activeClassName='active'>Get In Touch</NavLink></NavItem>
-                
+          
          <Dropdown trigger={
           <Button className='usernav' ><span> Hello, {props.user.name}</span></Button>
           }>
@@ -33,8 +33,6 @@ const Nav = (props) => {
           <NavItem className='dropdown' onClick={props.handleLogOut}>
             <NavLink exact to='' activeClassName='active'>Log Out</NavLink></NavItem>
          </Dropdown>
-
-         <Button className='myrecipes'>My Recipes</Button>
 
       </Navbar>
       :
