@@ -7,7 +7,6 @@ const RecipesPage = (props) => {
   return (
     props.user && props.recipe ?
     <div className='RecipesPage'>
-
       <h1>Recipes</h1>
         <ul>
           {props.recipe.matches.map(r => 
