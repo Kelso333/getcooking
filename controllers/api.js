@@ -6,7 +6,6 @@ function recipe(req, res, next) {
   request(URL, (err, response, body) => {
     if(err) return res.send(err);
     let recipes = body;
-    console.log(body);
     res.send(recipes)
   })
 
