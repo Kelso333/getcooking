@@ -55,9 +55,6 @@ class Home extends Component {
 
       <img className='homeimages' src='./images/home_images.png' />
 
-    {/*<div className='footer'> 
-      <span>&copy; 2015 Copyright. All Rights Reserved.</span>
-    </div>*/}
 
       </div>
     )

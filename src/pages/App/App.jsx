@@ -111,7 +111,6 @@ class App extends Component {
                 }/>
 
               </Switch>
-        <FooterCopyright />
 
             </div>
           </Router>
