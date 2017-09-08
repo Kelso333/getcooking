@@ -15,7 +15,7 @@ class Home extends Component {
       <div className='home'>
 
         
-        <Slider indicators={false}>
+        <Slider transitions={1000} indicators={false}>
           <Slide
             src='./images/crab-ceviche.jpg' 
             title='Crab Ceviche'>
@@ -24,7 +24,7 @@ class Home extends Component {
           <Slide
             src='./images/danish-pancake.jpg'
             title='Danish Pancake'>
-            Perfect for dessert
+            Perfect for breakfast
           </Slide>
           <Slide
             src='./images/Coffee-Chocolate-Cinnamon-Pecan-Pie.jpg'

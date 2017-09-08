@@ -9,12 +9,15 @@ h1 {
   top: 180px;
 }
 
+.smallcard, .card, .card-image img {
+  width: 60%;
+}
+
 .gettoknowus, .getintouch, .signup, .login, .loading, .RecipesPage {
   text-align: center;
   padding: 60px;
   font-family: 'Encode Sans', sans-serif;
 }
-
 
 .logo {
   position: absolute;
@@ -26,13 +29,18 @@ h1 {
 .navlinks {
   position: relative;
   top: 13px;
-  left: -5px;
+  left: 75px;
   color: white;
 }
 
-.userdropdown {
+.usernav {
+  position: relative;
+  top: 100px;
+  right: 70px;
+}
+
+.dropdown {
   font-family: 'Encode Sans', sans-serif;
-  
 }
 
 a {
@@ -61,10 +69,16 @@ a {
   left: 165px;
   }
 
-  .apiphoto {
+.recipe {
+  box-shadow: 0 19px 98px rgba(0, 0, 0, 0.08), 0 10px 12px rgba(0,0,0,0.09);
+  text-align: center;
+  color: #ff7043;
+  margin: 0 auto;
+}
 
-  }
-
-  
+.apiTitle {
+  font-weight: bold;
+  font-size: 20px;
+}
 
 

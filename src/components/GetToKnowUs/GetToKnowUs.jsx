@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Slide, Slider, Carousel} from 'react-materialize';
 
-class GetToKnowUS extends Component {
+class GetToKnowUs extends Component {
   render(){
     return(
 
@@ -28,10 +28,4 @@ class GetToKnowUS extends Component {
 
 }
 
-
-
-
-
-
-
-export default GetToKnowUS;
+export default GetToKnowUs;
