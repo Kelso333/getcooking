@@ -43,11 +43,9 @@ class LogInForm extends Component {
         <form className='form-horizontal' onSubmit={this.handleSubmit} >
 
           <input type='email' className='form-control' placeholder='Email' value={this.state.email} onChange={(e) => this.handleChange('email', e)} />
-      
           <input type='password' className='form-control' placeholder='Password' value={this.state.password} onChange={(e) => this.handleChange('password', e)} />
-        
-          <button className='btn waves-effect hoverable' disabled={this.isFormInvalid()}>Log In</button>&nbsp;&nbsp;&nbsp;
-
+          <button className='btn waves-effect hoverable' disabled={this.isFormInvalid()}>Log In</button>
+          &nbsp;&nbsp;&nbsp;
           <Link className='btn waves-effect hoverable' to='/'>Cancel</Link>
 
         </form>

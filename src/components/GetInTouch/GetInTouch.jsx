@@ -6,15 +6,15 @@ class GetInTouch extends Component {
   render() {
     return (
 
-      <div className='getintouch'>
-        <h3>Get In Touch</h3>
+    <div className='getintouch'>
+      <h3>Get In Touch</h3>
 
-        <br />
-           <div>
+      <br />
+      <div>
         <Slider indicators={false}>
           <Slide
             src='./images/recipe_image.jpg'>
-        </Slide>
+          </Slide>
         </Slider>
       </div>
 
@@ -30,10 +30,9 @@ class GetInTouch extends Component {
           <CollapsibleItem header='Email'>
             <Link to='/'>info@GetCooking.com</Link>
           </CollapsibleItem>
-
         </Collapsible>
 
-      </div>
+    </div>
 
     )
   }

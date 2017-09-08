@@ -13,12 +13,9 @@ const Recipe = (props) => {
           </CardTitle>}>
           <p className='apiHeaders'>Ingredients:</p>
           <p className='ingred'>{props.recipe.ingredients}</p>
-
           <p className='apiHeaders'>Rating:</p>
          <p> {props.recipe.rating}</p>
       </Card>
-
-
     </div>
   );
 }

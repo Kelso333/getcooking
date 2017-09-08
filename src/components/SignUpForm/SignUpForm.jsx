@@ -50,18 +50,13 @@ class SignUpForm extends Component {
 
             <input type='text' className='form-control' placeholder='name' value={this.state.name} onChange={(e) => this.handleChange('name', e)} />
             <br />
- 
-
             <input type='email' className='form-control' placeholder='Email' value={this.state.email} onChange={(e) => this.handleChange('email', e)} />
             <br />
-
             <input type='password' className='form-control' placeholder='Password' value={this.state.password} onChange={(e) => this.handleChange('password', e)}
             />
             <br />
-            
             <input type='password' className='form-control' placeholder='Confirm Password' value={this.state.passwordConf} onChange={(e) => this.handleChange('passwordConf', e)}
             />
-            
             <br />
             <br />
             <button className='btn waves-effect hoverable' type='submit' disabled={this.isFormInvalid()}>Sign Up</button>&nbsp;&nbsp;

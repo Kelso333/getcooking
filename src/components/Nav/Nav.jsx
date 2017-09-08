@@ -37,27 +37,25 @@ const Nav = (props) => {
 
       <Navbar className='navbar' right>
         <Link exact to='/'><img className='logo' src='./images/getcooking_whitelogo-01.png'/></Link>
-
-        <NavItem className='navlinks'> 
-          <NavLink exact to='/' activeClassName='active'>Home</NavLink></NavItem>
-        <NavItem className='navlinks'>
-          <NavLink exact to='/gettoknowus' activeClassName='active'>Get To Know Us</NavLink></NavItem>
-        <NavItem className='navlinks'> 
-          <NavLink exact to='/getintouch' activeClassName='active'>Get In Touch</NavLink></NavItem>
+          <NavItem className='navlinks'> 
+            <NavLink exact to='/' activeClassName='active'>Home</NavLink></NavItem>
+          <NavItem className='navlinks'>
+            <NavLink exact to='/gettoknowus' activeClassName='active'>Get To Know Us</NavLink></NavItem>
+          <NavItem className='navlinks'> 
+            <NavLink exact to='/getintouch' activeClassName='active'>Get In Touch</NavLink></NavItem>
 
         <Dropdown trigger={
           <Button className='usernav btn waves-effect hoverable'><span>Sign Up</span></Button>
           }>
           <NavItem className='dropdown'>
             <NavLink exact to='/signup'>Sign Up</NavLink></NavItem>
-
           <NavItem divider />
           <NavItem className='dropdown'>
             <NavLink exact to='/login' activeClassName='active'>Log In</NavLink></NavItem>
         </Dropdown>
 
-    </Navbar>
-    );
+      </Navbar>
+  );
 }
 
 

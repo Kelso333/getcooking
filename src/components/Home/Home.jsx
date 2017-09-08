@@ -59,11 +59,8 @@ class Home extends Component {
       <span>&copy; 2015 Copyright. All Rights Reserved.</span>
     </div>*/}
 
-</div>
-
+      </div>
     )
   }
 }
-
-
 export default Home;

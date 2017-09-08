@@ -74,9 +74,9 @@ class App extends Component {
           <Router>
             <div>
               <Nav 
-              user={this.state.user}
-              handleLogOut={this.handleLogOut}
-            />
+                user={this.state.user}
+                handleLogOut={this.handleLogOut}
+              />
 
               <Switch>
                 <Route exact path='/' render={(props) =>

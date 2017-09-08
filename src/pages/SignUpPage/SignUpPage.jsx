@@ -21,7 +21,7 @@ class SignUpPage extends Component {
         />
 
         <p>{this.state.message}</p>
-        </div>
+      </div>
     );
   }
 };
