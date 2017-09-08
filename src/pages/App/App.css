@@ -45,7 +45,7 @@ h1 {
   right: 70px;
 }
 
-.dropdown, .myrecipes {
+.dropdown {
   font-family: 'Encode Sans', sans-serif;
 }
 
@@ -91,4 +91,19 @@ a {
   font-size: 20px;
 }
 
+.homeimages {
+  width: 90%;
+  position: relative;
+  top: 15px;
+  left: 35px;
+}
+
+/*.footer {
+  background-color: orange;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  font-family: 'Encode Sans', sans-serif;
+}*/
 

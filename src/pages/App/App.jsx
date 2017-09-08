@@ -7,6 +7,7 @@ import GetInTouch from '../../components/GetInTouch/GetInTouch';
 import SignUpPage from '../SignUpPage/SignUpPage';
 import LogInPage from '../LogInPage/LogInPage'
 import userService from '../../utils/userService';
+import FooterCopyright from '../../components/FooterCopyright/FooterCopyright';
 import RecipesPage from '../RecipesPage/RecipesPage';
 import {
   BrowserRouter as Router,
@@ -110,6 +111,7 @@ class App extends Component {
                 }/>
 
               </Switch>
+        <FooterCopyright />
 
             </div>
           </Router>

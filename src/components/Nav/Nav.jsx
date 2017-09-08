@@ -7,9 +7,7 @@ const Nav = (props) => {
     props.user ?
 
       <Navbar className='navbar' right>
-
         <Link to='/'><img className='logo' src='./images/getcooking_whitelogo-01.png'/></Link>
-        
         <NavItem className='navlinks'> 
           <NavLink exact to='/' activeClassName='active'>Home</NavLink>
           </NavItem>
