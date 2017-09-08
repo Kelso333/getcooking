@@ -22,15 +22,14 @@ class GetInTouch extends Component {
     
       <br />
         <Collapsible popout defaultActiveKey={3}>
-
-          <CollapsibleItem header='Address' icon='arrow_drop_down'>
+          <CollapsibleItem header='Address'>
             123 San Pedro Ave,
             Los Angeles, CA 90012
           </CollapsibleItem>
-          <CollapsibleItem header='Phone Number' icon='arrow_drop_down'>
+          <CollapsibleItem header='Phone Number'>
             (818) 549-2375
           </CollapsibleItem>
-          <CollapsibleItem header='Email' icon='arrow_drop_down'>
+          <CollapsibleItem header='Email'>
             <Link to='/'>info@GetCooking.com</Link>
           </CollapsibleItem>
 

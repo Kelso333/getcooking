@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link, NavLink} from 'react-router-dom';
 import {Navbar, NavItem, Dropdown, Button} from 'react-materialize';
 
 const Nav = (props) => {
@@ -7,47 +8,61 @@ const Nav = (props) => {
 
       <Navbar className='navbar' right>
 
-        <img className='logo' src='./images/getcooking_whitelogo-01.png' />
+        <Link to='/'><img className='logo' src='./images/getcooking_whitelogo-01.png'/></Link>
         
-        <NavItem className='navlinks' href='/'>Home</NavItem>
-        <NavItem className='navlinks' href='/recipes'>Recipes</NavItem>
-        <NavItem className='navlinks' 
-        href='/gettoknowus'>Get To Know Us</NavItem>
-        <NavItem className='navlinks' href='/getintouch'>Get In Touch</NavItem>
-      
+        <NavItem className='navlinks'> 
+          <NavLink exact to='/' activeClassName='active'>Home</NavLink>
+          </NavItem>
+
+        <NavItem className='navlinks'> 
+          <NavLink exact to='/recipes' activeClassName='active'>Recipes</NavLink>
+          </NavItem>
+
+        <NavItem className='navlinks'> 
+          <NavLink exact to='/gettoknowus' activeClassName='active'>Get To Know Us</NavLink></NavItem>
+
+        <NavItem className='navlinks'> 
+          <NavLink exact to='/getintouch' activeClassName='active'>Get In Touch</NavLink></NavItem>
+                
          <Dropdown trigger={
           <Button className='usernav' ><span> Hello, {props.user.name}</span></Button>
           }>
-          <NavItem className='dropdown'>Edit Profile</NavItem>
+          <NavItem className='dropdown'>
+            <NavLink exact to='/' activeClassName='active'>Edit Profile</NavLink></NavItem>
           <NavItem divider />
-          <NavItem className='dropdown' href='' onClick={props.handleLogOut}>Log Out</NavItem>
+          <NavItem className='dropdown' onClick={props.handleLogOut}>
+            <NavLink exact to='' activeClassName='active'>Log Out</NavLink></NavItem>
          </Dropdown>
+
+         <Button className='myrecipes'>My Recipes</Button>
 
       </Navbar>
       :
 
       <Navbar className='navbar' right>
-        <img className='logo' src='./images/getcooking_whitelogo-01.png' />
+        <Link exact to='/'><img className='logo' src='./images/getcooking_whitelogo-01.png'/></Link>
 
-        <NavItem className='navlinks' href='/'>Home</NavItem>
-        <NavItem className='navlinks' href='/gettoknowus'>Get To Know Us</NavItem>
-        <NavItem className='navlinks' href='/getintouch'>Get In Touch</NavItem>
+        <NavItem className='navlinks'> 
+          <NavLink exact to='/' activeClassName='active'>Home</NavLink></NavItem>
+        <NavItem className='navlinks'>
+          <NavLink exact to='/gettoknowus' activeClassName='active'>Get To Know Us</NavLink></NavItem>
+        <NavItem className='navlinks'> 
+          <NavLink exact to='/getintouch' activeClassName='active'>Get In Touch</NavLink></NavItem>
 
         <Dropdown trigger={
           <Button className='usernav'><span>Sign Up</span></Button>
           }>
-          <NavItem className='dropdown' href='/signup'>Sign Up</NavItem>
+          <NavItem className='dropdown'>
+            <NavLink exact to='/signup'>Sign Up</NavLink></NavItem>
 
           <NavItem divider />
-
-          <NavItem className='dropdown' href='/login'>Log In</NavItem>
+          <NavItem className='dropdown'>
+            <NavLink exact to='/login' activeClassName='active'>Log In</NavLink></NavItem>
         </Dropdown>
 
     </Navbar>
     );
 }
-
-
 
 
 export default Nav;
